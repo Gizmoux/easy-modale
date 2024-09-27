@@ -1,0 +1,23 @@
+{
+	"name": "easy-modale",
+	"version": "0.1.1",
+	"description": "modale-creation",
+	"main": "index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc"
+	},
+	"author": "Gizmoux",
+	"license": "ISC",
+	"files": [
+		"lib/**/*"
+	],
+	"devDependencies": {
+		"@types/react": "^18.3.3",
+		"typescript": "^5.5.4"
+	},
+	"dependencies": {
+		"lucide-react": "^0.414.0",
+		"react": "^18.3.1"
+	}
+}
