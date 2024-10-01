@@ -1,6 +1,6 @@
 {
 	"name": "easy-modale",
-	"version": "0.1.4",
+	"version": "0.1.5",
 	"description": "modale-creation",
 	"main": "lib/index.js",
 	"module": "lib/Modal.jsx",
