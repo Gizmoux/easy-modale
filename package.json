@@ -1,13 +1,13 @@
 {
 	"name": "easy-modale",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "modale-creation",
 	"main": "lib/index.js",
 	"module": "lib/Modal.jsx",
 	"types": "lib/index.d.ts",
 	"exports": {
 		".": {
-			"import": "./lib/Modal.jsx",
+			"import": "./lib/Modal.js",
 			"require": "./lib/index.js"
 		}
 	},
