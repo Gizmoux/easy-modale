@@ -13,6 +13,33 @@ yarn add easy-modale
 
 ```
 
+### Utilisation
+
+Voici comment utiliser le composant Modal dans votre application React :
+
+# Exemple de Code
+
+```js
+import React, { useState } from 'react';
+import { Modal } from 'easy-modale';
+
+function App() {
+	const [isModalOpen, setIsModalOpen] = useState(false);
+
+	const openModal = () => setIsModalOpen(true);
+	const closeModal = () => setIsModalOpen(false);
+
+	return (
+		<div>
+			<button onClick={openModal}>Ouvrir la modale</button>
+			<Modal isOpen={isModalOpen} onClose={closeModal} />
+		</div>
+	);
+}
+
+export default App;
+```
+
 # Propriétés
 
 Le composant modal accepte les propriétés suivantes:
