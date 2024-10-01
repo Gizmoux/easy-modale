@@ -1,8 +1,10 @@
 {
 	"name": "easy-modale",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "modale-creation",
-	"main": "index.ts",
+	"main": "lib/index.js",
+	"module": "lib/index.esm.js",
+	"types": "lib/index.d.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "tsc"
