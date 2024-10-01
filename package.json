@@ -1,9 +1,9 @@
 {
 	"name": "easy-modale",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"description": "modale-creation",
 	"main": "lib/index.js",
-	"module": "lib/Modal.jsx",
+	"module": "lib/Modal.js",
 	"types": "lib/index.d.ts",
 	"exports": {
 		".": {
