@@ -13,6 +13,15 @@ yarn add easy-modale
 
 ```
 
+# Environnement de développement
+
+## Pour un développement optimal, nous recommandons :
+
+- Node.js : version 14.x ou supérieure
+- Éditeur de code : Visual Studio Code (VS Code)
+
+  Ces outils assureront une meilleure expérience de développement avec votre environement.
+
 ### Utilisation
 
 Voici comment utiliser le composant Modal dans votre application React :
@@ -22,6 +31,7 @@ Voici comment utiliser le composant Modal dans votre application React :
 ```js
 import React, { useState } from 'react';
 import { Modal } from 'easy-modale';
+import { Circle } from 'lucide-react';
 
 function App() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,9 +40,22 @@ function App() {
 	const closeModal = () => setIsModalOpen(false);
 
 	return (
-		<div>
-			<button onClick={openModal}>Ouvrir la modale</button>
-			<Modal isOpen={isModalOpen} onClose={closeModal} />
+		<div className="min-h-screen bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center">
+			<div className="text-center">
+				<h1 className="text-4xl font-bold text-white mb-8">
+					Demonstration de Easy Modale
+				</h1>
+				<button
+					onClick={openModal}
+					className="bg-white text-blue-600 font-semibold py-2 px-4 rounded-full
+                     shadow-lg hover:bg-blue-100 transition duration-300 ease-in-out
+                     flex items-center justify-center"
+				>
+					<Circle className="mr-2" size={20} />
+					Open Modal
+				</button>
+				<Modal isOpen={isModalOpen} onClose={closeModal} />
+			</div>
 		</div>
 	);
 }
