@@ -1,6 +1,6 @@
 {
 	"name": "easy-modale",
-	"version": "0.1.8",
+	"version": "0.1.9",
 	"description": "modale-creation",
 	"main": "lib/index.js",
 	"module": "lib/index.js",
@@ -19,6 +19,12 @@
 	"license": "ISC",
 	"files": [
 		"lib/**/*"
+	],
+	"keywords": [
+		"modal",
+		"react",
+		"component",
+		"popup"
 	],
 	"devDependencies": {
 		"@types/react": "^18.3.3",
