@@ -4,16 +4,29 @@ import { CircleX } from 'lucide-react';
 interface ModalProps {
 	isOpen: boolean;
 	onClose: () => void;
+	className?: string;
+	overlayClassName?: string;
+	contentClassName?: string;
+	closeIconClassName?: string;
+	children?: any;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
+const Modal: React.FC<ModalProps> = ({
+	isOpen,
+	onClose,
+	className = '',
+	overlayClassName = '',
+	contentClassName = '',
+	closeIconClassName = '',
+	children,
+}) => {
 	if (!isOpen) return null;
 
 	return (
-		<div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-			<div className="bg-primary-foreground w-1/4 h-1/7 p-4 items-center rounded-md flex justify-between">
-				<h1>Modale Open!</h1>
-				<CircleX size={48} onClick={onClose} className="cursor-pointer" />
+		<div className={`${overlayClassName} ${className}`}>
+			<div className={contentClassName}>
+				{children}
+				<CircleX size={48} onClick={onClose} className={closeIconClassName} />
 			</div>
 		</div>
 	);
